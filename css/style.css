@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background: url(../img/portadas/portada.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header .financiamiento {
+    width: 100%;
+    height: 100%;
+    background: url(../img/portadas/portadafinanciamiento.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header .oficinas {
+    width: 100%;
+    height: 100%;
+    background: url(../img/portadas/portadaoficinas.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.titulos {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulos2 {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+
+header .titulos h1 {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+header .titulos h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+body nav {
+    justify-content: center !important;
+}
+
+a {
+    color: black !important;
+}
+
+.oportunidades{
+    padding: 30px 0 60px 0;
+}
+
+.centradooportunidades {
+    display: flex;
+    justify-content: center;
+}
+
+.imagenmantenimiento{
+    width: 48%;
+    border-radius: 20px;
+}
+
+.oportunidades .texto{
+    width: 48%;
+}
+
+.texto h3{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-right: 15px;
+}
+
+.texto h4{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: orange;
+}
+
+.texto p{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    padding-left: 10px;
+
+}
+
+.texto button {
+    margin-left: 10px;
+}
+
+
+.volkswagen h3 {
+    font-size: 10px !important;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-right: 15px;
+}
+
+.card-text {
+    padding: 10px 15px 10px 15px;
+}
+
+.card-group {
+    align-content: right;
+}
+
+.camionetas{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: #f5f5f5;
+}
+
+.camionetaslista{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.camionetasimg{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+    border-radius: 7px;
+}
+
+.camionetasimg > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.camionetasimg > iframe{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(44, 100%, 52%, 0.5);
+    transition: transform .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover img{
+    width: 50px;
+}
+
+.hover p{
+    color: #000000;
+    font-size: larger;
+    font-weight: 500;
+    text-align: center;
+}
+
+.camionetasimg:hover .hover{
+    transform: scale(1);
+}
+
+.carrusel {
+    margin-top: 40px;
+    width: 100%;
+    height: 90% !important;
+}
+
+.premios {
+    background-color: white;
+    margin-top: 30px;
+}
+
+.trayectoria {
+    display: flex;
+    padding: 30px 10px 30px 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #f5f5f5;
+}
+.trayectoria h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.trayectoria h3 {
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.marcas{
+    background: #ffffff;
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+
+
+.marcascontenedor{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marcaslogos{
+    width: 28%;
+    text-align: center;
+}
+
+.marcaslogos img{
+    width: 90%;
+}
+
+.marcaslogos h3{
+    margin: 10px 0;
+}
+
+.marcaslogos p{
+    font-weight: 300;
+    text-align: center;
+}
+
+
+@media screen and (max-width:900px){
+
+    .centradooportunidades{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .oportunidades .texto{
+        width: 90%;
+    }
+
+    .centradooportunidades{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .oportunidades .texto{
+        width: 90%;
+    }
+
+    .camionetasimg{
+        width: 90%;
+    }
+    
+    .marcascontenedor{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .marcaslogos{
+        width: 100%;
+        text-align: center;
+    }
+
+    .marcaslogos:nth-child(1), .marcaslogos:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .marcaslogos img{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    
+    .oportunidades .texto{
+        width: 95%;
+        justify-content: center;
+    }
+}
